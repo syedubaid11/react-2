@@ -1,16 +1,16 @@
-import { useState } from "react";
-import Counter from './Counter';
-import LikeButton from "./LikeButton";
+import Counter from './components/Counter'
+import LikeButton from './components/LikeButton'
+import FetchJoke from "./components/FetchJoke";
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
 
     return (
     <div>
       <h1>React-2</h1>
       <Counter />
       <LikeButton />
+      <FetchJoke/>
     </div>
   );
 }
